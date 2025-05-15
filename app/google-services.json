@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "631876658327",
+    "project_id": "hasapp-c9c3c",
+    "storage_bucket": "hasapp-c9c3c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:631876658327:android:51d755caecddcd2cef35d2",
+        "android_client_info": {
+          "package_name": "lk.javainstitute.has"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDf3wl-bEfTRzUjPLn9y4SRzoYEU94c67o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

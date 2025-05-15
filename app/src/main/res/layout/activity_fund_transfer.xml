@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_violet"
+    tools:context=".FundTransferActivity">
+
+    <EditText
+        android:id="@+id/fundAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Amount"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <EditText
+        android:id="@+id/fundName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/fundAmount"
+        app:layout_constraintStart_toStartOf="@+id/fundAmount"
+        app:layout_constraintTop_toBottomOf="@+id/fundAmount" />
+
+    <EditText
+        android:id="@+id/fundAccNo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Acc No:"
+        android:inputType="number"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/fundSpinner"
+        app:layout_constraintStart_toStartOf="@+id/fundSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/fundSpinner" />
+
+    <EditText
+        android:id="@+id/fundDes"
+        android:layout_width="0dp"
+        android:layout_height="164dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="@+id/fundAccNo"
+        app:layout_constraintStart_toStartOf="@+id/fundAccNo"
+        app:layout_constraintTop_toBottomOf="@+id/fundAccNo" />
+
+    <Button
+        android:id="@+id/fundBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/violet"
+        android:text="Confirm"
+        app:layout_constraintEnd_toEndOf="@+id/fundDes"
+        app:layout_constraintStart_toStartOf="@+id/fundDes"
+        app:layout_constraintTop_toBottomOf="@+id/fundDes" />
+
+    <Spinner
+        android:id="@+id/fundSpinner"
+        android:layout_width="0dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/fundName"
+        app:layout_constraintStart_toStartOf="@+id/fundName"
+        app:layout_constraintTop_toBottomOf="@+id/fundName" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Fund Transfer"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/fundTransferBackBtn"
+        android:layout_width="51dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/textView10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView10"
+        app:srcCompat="@drawable/back" />
+</androidx.constraintlayout.widget.ConstraintLayout>
